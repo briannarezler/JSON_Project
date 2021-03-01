@@ -25,6 +25,7 @@ for eq in list_of_eqs:
     lon = eq["geometry"]["coordinates"][0]
     lat = eq["geometry"]["coordinates"][1]
     text = eq["properties"]["place"]
+
     mags.append(mag)
     lons.append(lon)
     lats.append(lat)
