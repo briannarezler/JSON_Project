@@ -48,12 +48,17 @@ for i in original_list:
 
 numbers = [34.6, -203.4, 44.9, 68.3, -12.2, 44.6, 12.7]
 
+newlist = [int(i) for i in numbers if i >= 0]
+print(newlist)
 
 ## 2 create a list of integers which specify the length of each word in
 ## a sentence except for the word 'the'
 
 sentence = "the quick brown fox jumps over the lazy dog"
 words = sentence.split()
+
+newlist = [len(i) for i in words if i != "the"]
+print(newlist)
 
 
 ## Given dictionary is consisted of vehicles and their weights in kilograms.
@@ -70,3 +75,6 @@ dict = {
     "Bicycle": 7,
     "Motorcycle": 110,
 }
+
+newlist = [i.upper() for i in dict if dict[i] <= 5000]
+print(newlist)
